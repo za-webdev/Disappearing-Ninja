@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Disappearing Ninja</title>
+	<style type="text/css">
+		table, button{
+			position: absolute;
+		}
+
+		tr{
+			width:900px;
+		}
+		 td{
+			height: 100px;
+			width: 230px;
+		}
+
+		 img{
+			height:200px;
+			margin: 40px;
+		}
+		button{
+		    color: white;
+		    background-color:#245076;
+		    font-weight:bold;
+		    vertical-align: middle;
+		    padding: 10px 50px;
+		    font-size: 15px;
+		    border-radius: 8px;
+		}
+	</style>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+        	for ( var i = 0; i <=8; i++ ) {
+        		$( "img" ).click(function() {
+  				$( this ).hide(function() {
+  			});
+		});
+  				
+			}		
+            
+             $("button").click(function(){
+                $("img").show();
+            });
+    
+        });
+		
+	</script>
+</head>
+<body>
+	
+	<table>
+			<div>
+				<tr class="ninja">
+					<td class="images"><img src="ninja.png" alt="ninja img" ></td>
+					<td class="images"><img src="ninja.png" alt="ninja img" ></td>
+					<td class="images"><img src="ninja.png" alt="ninja img" ></td>
+					<td class="images"><img src="ninja.png" alt="ninja img" ></td>
+				</tr>
+			</div>
+			<div>
+				<tr class="disappear">
+					<td class="images"><img src="ninja.png" alt="ninja img" ></td>
+					<td class="images"><img src="ninja.png" alt="ninja img" ></td>
+					<td class="images"><img src="ninja.png" alt="ninja img" ></td>
+					<td class="images"><img src="ninja.png" alt="ninja img" ></td>
+				</tr>
+			</div>
+	</table>
+	<button>Restore</button>
+		
+		
+		
+	
+		
+
+</body>
+</html>
